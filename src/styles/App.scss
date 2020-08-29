@@ -32,6 +32,10 @@ $inputColor: #797979;
   flex-direction: column;
   align-items: center;
   background-color: $darkBackground;
+  // ---- EI 11 ----
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-align-items: center;
 
   .form-wrapper {
     display: flex;
@@ -39,6 +43,9 @@ $inputColor: #797979;
     margin-top: 8%;
     max-width: 1000px;
 
+    // ---- EI 11 ----
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
     .form-title {
       font-size: 4vw;
       width: 100%;
@@ -73,6 +80,10 @@ $inputColor: #797979;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0.5rem;
       padding-bottom: 2rem;
+      // ---- EI 11 ----
+      display: -ms-grid;
+      -ms-grid-template-columns: 1fr 1fr;
+      -ms-grid-gap: 0.5rem;
       input {
         padding: 0;
       }
@@ -81,16 +92,18 @@ $inputColor: #797979;
         font-family: "Merriweather", serif;
         font-style: italic;
         color: $inputColor;
-        font-style: 1rem;
         padding-left: 0.5rem;
         height: 2.8rem;
-        border-radius: none;
+        border-radius: unset;
         border: unset;
       }
 
       .form-email {
         display: flex;
         flex-direction: column;
+
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
       }
     }
 
@@ -174,6 +187,8 @@ input.error {
       padding: 2rem;
       .form-inputs {
         grid-template-columns: 100%;
+        // ---- EI 11 ----
+        -ms-grid-template-columns: 100%;
       }
     }
   }
