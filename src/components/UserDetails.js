@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import nextBtn from "../images/nextBtn.jpg";
-
 import "../styles/App.scss";
 
 const emailRegex = RegExp(
@@ -65,7 +64,6 @@ class UserDetails extends Component {
   handleChange = (e) => {
     const { name, value } = e.target;
     let formErrors = { ...this.state.formErrors };
-
     switch (name) {
       case "email":
         formErrors.email = emailRegex.test(value)
@@ -76,7 +74,6 @@ class UserDetails extends Component {
       default:
         break;
     }
-
     this.setState({ formErrors, [name]: value });
   };
 
