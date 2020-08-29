@@ -162,6 +162,10 @@ input.error {
   -webkit-appearance: button; /* hide default arrow in chrome OSX */
 }
 
+.dropdown select::-ms-expand {
+  display: none;
+}
+
 // ----- MEDIA Q'S -----
 
 @media only screen and (max-width: 1000px) {
